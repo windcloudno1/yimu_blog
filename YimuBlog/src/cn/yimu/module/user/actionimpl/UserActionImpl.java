@@ -1,6 +1,6 @@
 package cn.yimu.module.user.actionimpl;
 
-import cn.yimu.module.authority.AuthorityGroup;
+import cn.yimu.module.permission.PermissionGroup;
 import cn.yimu.module.user.User;
 import cn.yimu.module.user.UserAction;
 
@@ -50,7 +50,7 @@ public class UserActionImpl implements UserAction {
 	}
 
 	@Override
-	public void addAuthorityGroup(AuthorityGroup group) {
+	public void addAuthorityGroup(PermissionGroup group) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -62,7 +62,7 @@ public class UserActionImpl implements UserAction {
 	}
 
 	@Override
-	public void modifyAuthorityGroup(AuthorityGroup group) {
+	public void modifyAuthorityGroup(PermissionGroup group) {
 		// TODO Auto-generated method stub
 		
 	}

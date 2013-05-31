@@ -1,6 +1,6 @@
 package cn.yimu.module.user;
 
-import cn.yimu.module.authority.AuthorityGroup;
+import cn.yimu.module.permission.PermissionGroup;
 
 
 public interface UserAction {
@@ -25,7 +25,7 @@ public interface UserAction {
 
 	public void modify(User user);
 	
-	public void addAuthorityGroup(AuthorityGroup group);
+	public void addAuthorityGroup(PermissionGroup group);
 	
 	/**
 	 * 
@@ -33,7 +33,7 @@ public interface UserAction {
 	 */
 	public void removeAuthorityGroup(String[] groupsId);
 
-	public void modifyAuthorityGroup(AuthorityGroup group);
+	public void modifyAuthorityGroup(PermissionGroup group);
 
 	/**
 	 * 

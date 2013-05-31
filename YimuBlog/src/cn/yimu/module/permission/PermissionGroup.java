@@ -1,10 +1,10 @@
-package cn.yimu.module.authority;
+package cn.yimu.module.permission;
 
-public class AuthorityGroup {
+public class PermissionGroup {
 	private String id = "";
 	private String name = "";
 	private String[] userId = new String[0];
-	private Authority[] authorities = new Authority[0];
+	private Permission[] authorities = new Permission[0];
 	
 	public String getId() {
 		return id;
@@ -30,11 +30,11 @@ public class AuthorityGroup {
 		this.userId = userId;
 	}
 	
-	public Authority[] getAuthorities() {
+	public Permission[] getAuthorities() {
 		return authorities;
 	}
 	
-	public void setAuthorities(Authority[] authorities) {
+	public void setAuthorities(Permission[] authorities) {
 		this.authorities = authorities;
 	}
 	

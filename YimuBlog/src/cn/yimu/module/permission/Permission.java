@@ -1,6 +1,6 @@
-package cn.yimu.module.authority;
+package cn.yimu.module.permission;
 
-public enum Authority {
+public enum Permission {
 	
 	MODULE_USER_MANAGER(0, "用户管理"),
 	MODULE_AUTHORITY_MANAGER(1, "权限管理");
@@ -8,7 +8,7 @@ public enum Authority {
 	private int num;
 	private String name;
 
-	private Authority(int num, String name) {
+	private Permission(int num, String name) {
 		this.num = num;
 		this.name = name;
 	}
@@ -22,7 +22,7 @@ public enum Authority {
 	}
 	
 	public String[] getAllName() {
-		Authority[] authorities = Authority.values();
+		Permission[] authorities = Permission.values();
 		String[] rlt = new String[authorities.length];
 		
 		for (int i = 0; i < authorities.length; i++)
@@ -32,7 +32,7 @@ public enum Authority {
 	}
 	
 	public int[] getAllNum() {
-		Authority[] authorities = Authority.values();
+		Permission[] authorities = Permission.values();
 		int[] rlt = new int[authorities.length];
 		
 		for (int i = 0; i < authorities.length; i++)

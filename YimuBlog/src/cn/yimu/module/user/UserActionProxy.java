@@ -1,6 +1,6 @@
 package cn.yimu.module.user;
 
-import cn.yimu.module.authority.AuthorityGroup;
+import cn.yimu.module.permission.PermissionGroup;
 import cn.yimu.module.user.actionimpl.UserActionImpl;
 
 public class UserActionProxy implements UserAction {
@@ -44,7 +44,7 @@ public class UserActionProxy implements UserAction {
 	}
 
 	@Override
-	public void addAuthorityGroup(AuthorityGroup group) {
+	public void addAuthorityGroup(PermissionGroup group) {
 		action.addAuthorityGroup(group);
 	}
 
@@ -54,7 +54,7 @@ public class UserActionProxy implements UserAction {
 	}
 
 	@Override
-	public void modifyAuthorityGroup(AuthorityGroup group) {
+	public void modifyAuthorityGroup(PermissionGroup group) {
 		action.modifyAuthorityGroup(group);
 	}
 
